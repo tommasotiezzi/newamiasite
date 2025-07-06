@@ -228,6 +228,15 @@
       }
     }
     </script>
+
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13920YSJ44"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-13920YSJ44');
+    </script>
 </head>
 <body>
     <!-- Navigation Breadcrumb -->
@@ -371,5 +380,50 @@
       ]
     }
     </script>
+    <script>
+// Track job application clicks
+document.addEventListener('DOMContentLoaded', function() {
+    // Track specific job positions
+    const jobLinks = document.querySelectorAll('.job-card a');
+    
+    jobLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const jobTitle = this.querySelector('.job-title').textContent.trim();
+            
+            // Clean job title for tracking
+            let eventLabel = '';
+            if (jobTitle.includes('Graphic')) {
+                eventLabel = 'graphic_designer';
+            } else if (jobTitle.includes('Sales')) {
+                eventLabel = 'sales_manager';
+            } else if (jobTitle.includes('Spontanea')) {
+                eventLabel = 'candidatura_spontanea';
+            } else {
+                eventLabel = 'other_position';
+            }
+            
+            gtag('event', 'job_application_click', {
+                'event_category': 'careers',
+                'event_label': eventLabel,
+                'job_title': jobTitle,
+                'value': 1
+            });
+            console.log('GA Event: Job application clicked -', eventLabel);
+        });
+    });
+
+    // Track breadcrumb home link
+    const homeLink = document.querySelector('nav[aria-label="Breadcrumb"] a');
+    if (homeLink) {
+        homeLink.addEventListener('click', function() {
+            gtag('event', 'navigation_click', {
+                'event_category': 'navigation',
+                'event_label': 'breadcrumb_home',
+                'value': 1
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
