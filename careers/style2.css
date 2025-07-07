@@ -1,11 +1,11 @@
-/* Titolo principale - MANTIENE FONT-WEIGHT 800 ORIGINALE */
+
 h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 20px;
     color: #141414;
     line-height: 1.2;
-}/* CSS adattato per la pagina Careers che mantiene lo stile IDENTICO della pagina principale */
+}
 
 :root {
     --bg-color: #ffffff;
@@ -35,7 +35,7 @@ body {
     padding: 40px 20px;
 }
 
-/* Breadcrumb Navigation */
+
 nav[aria-label="Breadcrumb"] {
     margin-bottom: 20px;
     font-size: 14px;
@@ -59,7 +59,6 @@ nav a:hover {
     color: #141414;
 }
 
-/* Header stilizzato come nella pagina principale */
 .header {
     display: flex;
     flex-direction: column;
@@ -75,7 +74,6 @@ nav a:hover {
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
 }
 
-/* Titolo principale - STESSO STILE DELL'HERO */
 h1 {
     font-size: 48px;
     font-weight: 300;
@@ -84,7 +82,6 @@ h1 {
     line-height: 1.2;
 }
 
-/* Subtitle - STESSO STILE DELL'HERO */
 .subtitle {
     font-size: 18px;
     font-weight: 300;
@@ -95,7 +92,7 @@ h1 {
     max-width: 800px;
 }
 
-/* Titoli sezione - STESSO STILE DEI NOSTRA-STORIA-TITLE */
+/* Titoli sezione */
 .date-header {
     font-size: 32px;
     font-weight: 300;
@@ -106,7 +103,6 @@ h1 {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Lista job */
 .job-list {
     display: flex;
     flex-direction: column;
@@ -114,7 +110,7 @@ h1 {
     margin-bottom: 60px;
 }
 
-/* Card job - STESSO STILE DELLE VALUE-CARD */
+/* Card job */
 .job-card {
     position: relative;
     background: white;
@@ -170,7 +166,6 @@ h1 {
     font-size: 24px;
 }
 
-/* Titolo job - STESSO STILE DEI VALUE-CARD H3 */
 .job-title {
     font-size: 24px;
     font-weight: 300;
@@ -179,7 +174,6 @@ h1 {
     line-height: 1.3;
 }
 
-/* Container per i tag */
 .job-tags {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +181,6 @@ h1 {
     margin-top: 8px;
 }
 
-/* Tag stilizzati */
 .tag {
     display: inline-flex;
     align-items: center;
@@ -229,7 +222,7 @@ h1 {
     object-fit: contain;
 }
 
-/* Footer - STESSO STILE DEL FOOTER PRINCIPALE */
+/* Footer */
 .footer {
     margin-top: 80px;
     text-align: center;
@@ -255,7 +248,7 @@ h1 {
     color: #141414;
 }
 
-/* Bottone "Torna indietro" - STESSO STILE CTA-BUTTON */
+/* Bottone "Torna indietro" */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -281,9 +274,8 @@ h1 {
     height: 16px;
 }
 
-/* MEDIA QUERIES - RESPONSIVE IDENTICO AL SITO PRINCIPALE */
 
-/* Tablet 1024px */
+
 @media (max-width: 1024px) {
     .header {
         padding: 40px 0;
@@ -301,7 +293,6 @@ h1 {
     }
 }
 
-/* Mobile 768px */
 @media (max-width: 768px) {
     body {
         padding: 20px;
@@ -318,7 +309,6 @@ h1 {
         margin-bottom: 20px;
     }
     
-    /* Titoli ridotti come nel sito principale */
     h1 {
         font-size: 36px;
     }
@@ -354,7 +344,6 @@ h1 {
         font-size: 20px;
     }
     
-    /* Nascondi "Apply" su mobile */
     .job-card:hover::after {
         display: none;
     }
@@ -366,7 +355,6 @@ h1 {
     }
 }
 
-/* Small Mobile 480px */
 @media (max-width: 480px) {
     .header {
         padding: 20px 0;
