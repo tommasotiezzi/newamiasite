@@ -116,10 +116,9 @@ header.scrolled {
 }
 
 /* ============================================================
-   HAMBURGER MENU - DESIGN AGGIORNATO
+   HAMBURGER MENU 
 ============================================================ */
 
-/* Hamburger Button - Solo tre linee fisse */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -136,10 +135,9 @@ header.scrolled {
     background: #141414;
     margin: 4px 0;
     border-radius: 1px;
-    transition: none; /* Nessuna animazione, rimangono fisse */
+    transition: none; 
 }
 
-/* Mobile Navigation - Background nero e design migliorato */
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -162,7 +160,6 @@ header.scrolled {
     transform: translateX(0);
 }
 
-/* Sezioni del menu mobile */
 .mobile-nav-section {
     width: 100%;
     margin-bottom: 40px;
@@ -173,7 +170,6 @@ header.scrolled {
     margin-bottom: 0;
 }
 
-/* Link del menu mobile */
 .mobile-nav a {
     color: white;
     text-decoration: none;
@@ -191,7 +187,6 @@ header.scrolled {
     padding-left: 10px;
 }
 
-/* Indicatore sezione attiva */
 .mobile-nav a.active {
     color: white;
     font-weight: 500;
@@ -209,7 +204,6 @@ header.scrolled {
     border-radius: 2px;
 }
 
-/* CTA Button nel menu mobile */
 .mobile-nav .cta-button {
     background: #141414;
     border: 2px solid white;
@@ -237,7 +231,6 @@ header.scrolled {
     height: 16px;
 }
 
-/* Sezione titoli */
 .mobile-nav-title {
     color: #ccc;
     font-size: 12px;
@@ -249,7 +242,6 @@ header.scrolled {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Logo nel menu mobile */
 .mobile-nav-logo {
     display: flex;
     align-items: center;
@@ -271,13 +263,11 @@ header.scrolled {
     font-weight: 300;
 }
 
-/* Media Query per mostrare hamburger su mobile */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
 }
-/* Mobile Navigation */
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -353,9 +343,6 @@ header.scrolled {
     line-height: 1.6;
 }
 
-/* ============================================================
-   SCROLL SECTION
-============================================================ */
 .scroll-section {
     background: white;
     padding: 20px 0;
@@ -1302,10 +1289,9 @@ header.scrolled {
 }
 
 /* ============================================================
-   MEDIA QUERIES - MOBILE RESPONSIVE
+   MEDIA QUERIES
 ============================================================ */
 
-/* Tablet */
 @media (max-width: 1024px) {
     /* Header */
     .main-nav ul {
@@ -1341,7 +1327,6 @@ header.scrolled {
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     /* Header - Mobile Navigation */
     .main-nav {
@@ -1520,7 +1505,7 @@ header.scrolled {
         margin-top: 0px !important;
     }
     .product-showcase {
-        text-align: left; /* Override del text-align: center */
+        text-align: left;
     }
     
     .highlight-content {
@@ -1742,7 +1727,6 @@ header.scrolled {
     }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
     /* Hero */
     .hero h1 {
@@ -1901,7 +1885,7 @@ header.scrolled {
         margin-bottom: 5px;
     }
     .product-showcase {
-        text-align: left; /* Override del text-align: center */
+        text-align: left;
     }
     
     .highlight-content {
